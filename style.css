@@ -39,7 +39,7 @@ img.logo {
     max-width: 25%;
     width: 8rem;
 }
-div.navdiv {
+#herpes {
     background-color: black;
     width: auto;
     height: auto;
@@ -48,8 +48,6 @@ div.navdiv {
     padding-bottom: 5px;
     padding-right: 2rem;
     color: white;
-    scroll-snap-type: ;
-    scroll-snap-align: top;
 }
 
 #right {
@@ -63,8 +61,8 @@ a.navbarlink {
 }
 a.navbarlink:hover{
     color: yellow;
-    margin-top: -1px;
-    margin-bottom: 1px;
+    margin-top: -2px;
+    margin-bottom: 2px;
 }
 
 
@@ -104,7 +102,6 @@ div.dropdown:hover .drop-items{
 .dropdown a:hover{
     color: yellow;
 }
-
 
 
 footer {
@@ -147,4 +144,12 @@ div.subdiv {
     border-width: 3px;
     border-color: darkgray;
     border-style: double;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.sticky + h3 {
+    padding-top: 50px;
 }
