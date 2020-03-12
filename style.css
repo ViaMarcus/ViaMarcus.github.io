@@ -1,0 +1,150 @@
+html {
+background-color: #fafafa;
+padding-left: 0px;
+}   
+
+h1.nextToLogo {
+    color:black;
+    font-size: 400%;
+    display: inline;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 1rem;
+    font-weight: lighter;
+    vertical-align: top;    
+}
+h3 {
+    font-family: sans-serif;
+    margin-left: 2rem;
+
+}
+h4 {
+    font-size: larger;
+    font-family: sans-serif;
+    padding-left: 2rem;
+}
+
+p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.subdiv p {
+    padding-left: 0rem;
+    font-size: small;
+}
+img.logo {
+    display: inline;
+    max-width: 25%;
+    width: 8rem;
+}
+div.navdiv {
+    background-color: black;
+    width: auto;
+    height: auto;
+    padding-left: 2rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 2rem;
+    color: white;
+    scroll-snap-type: ;
+    scroll-snap-align: top;
+}
+
+#right {
+    float: right;     
+}
+
+a.navbarlink {
+    background-color: black;
+    color: white;  
+    padding-right: 0.6rem;
+}
+a.navbarlink:hover{
+    color: yellow;
+    margin-top: -1px;
+    margin-bottom: 1px;
+}
+
+
+div.dropdown {
+    background-color: black;
+    color: white;
+    float: right;
+    border-radius: 1.5rem;
+    height: 3rem;
+    width: 3rem;
+    margin-top: .7rem;
+    text-align: center;
+}
+button.dropbtn {
+    background: none;
+    font-size: 200%;
+    padding: 0px;
+    color: white;
+    border: none;
+}
+div.drop-items {
+    text-align: left;
+    display: none;
+    background-color: black;
+    position: absolute;
+    width: fit-content;
+    right: 5px;
+}
+div.drop-items a {
+    color: white;
+    padding: 5px;
+    display: block;
+}
+div.dropdown:hover .drop-items{
+    display: block;
+}
+.dropdown a:hover{
+    color: yellow;
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: lightgray;
+    margin-left: 0px;
+    left: 0px;
+    padding-left: 2rem;
+}
+
+div.bigdiv {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+}
+
+#subDivLeft {
+    width: 70%;
+    height: 100%;
+    left: 2rem;
+}
+#subDivRight {
+    width: 20%;
+    height: fit-content;
+    font-size: x-small;
+}
+img {
+    width: 100%;
+}
+div.subRight img {
+    width: 100%;
+    
+}
+div.subdiv {
+    border-radius: 1rem;
+    padding: 1rem;
+    border-width: 3px;
+    border-color: darkgray;
+    border-style: double;
+}
