@@ -1,0 +1,119 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    padding: 0;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 45% 25%;
+    grid-template-rows: 13% fit-content 87%;
+    grid-template-areas: "logo title drop" "meny meny meny";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+    box-shadow: 0px 5px 5px black;
+    margin: 0;
+    background-color: #f3f3f3;
+}
+br {
+    height: 5;
+}
+.grid-item {
+    display: grid;
+    font-size: 400%;
+}
+#logo {max-width: 100%;}
+.item1 {
+    grid-area: logo;
+}
+.item2 {
+    grid-area: title;
+}
+.item3 {
+    grid-area: drop;
+    justify-content: space-evenly;
+    vertical-align: middle;
+    font-size: 600%;
+}
+.grid-container a {
+    font-size: 600%;
+    margin: 0;
+}
+.item4 {
+    grid-area: meny;
+}
+#menu-btn {
+    background: none;
+}
+.dropdown {
+    background-color:#f3f3f3;
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "dark light" "font1 font2";
+}
+.drop-item {
+    width: 100%;
+    border: solid 2px black;
+    padding: 0%;
+    display: grid;
+    font-size: 600%;
+    padding-left: 1rem;
+    gap: 5px;
+}
+
+#item3:hover ~ .dropdown{
+    display: grid;
+}
+.dropdown:hover {
+    display: grid;
+}
+
+#menubox:checked ~ .dropdown {
+    display: grid;
+    opacity: 1;
+    transition: .2s all ease;
+}
+#menubox {
+    display: none;
+    opacity: 0;
+}
+
+.main {
+    position: absolute;
+    top: 13%;
+    background-color: beige;
+    width: 100%;
+    height: 97%;
+    overflow: hidden;
+    padding-top: 1rem;
+}
+#drop1 {
+    grid-area: dark;
+    display: grid;
+    background-color: black;
+    border: 16px solid red;
+    color: white;
+}
+#drop2 {
+    grid-area: light;
+    display: grid;
+    border: 16px solid red;
+    background-color: #f3f3f3;
+    color: black;
+}
+#font1 {
+    grid-area: font1;
+    display: grid;
+    border: 16px solid red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#font2 {
+    grid-area: font2;
+    display: grid;
+    border: 16px solid red;
+    padding-left: 0;
+}
